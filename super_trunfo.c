@@ -128,5 +128,64 @@ int main () {
     printf("Pib per capita: %.1f \n", rcapita);
     printf("Superpoder: %.1f \n", rsuperpoder);
 
+    // aplicando if / else 
+    
+    printf("*** Comparação de cartas Atributo: População *** \n");
+    if (populacao > populacao2){
+    printf("Carta 1 venceu: %ld \n", populacao);
+    }
+    else{
+    printf("Carta 2 venceu: %ld \n", populacao2);
+    }
+
+    printf("*** Comparação de cartas Atributo: Área *** \n");
+    if (km > km2){
+        printf("Carta 1 venceu: %f \n", km);
+        }
+        else{
+        printf("Carta 2 venceu: %f \n", km2);
+        }
+        
+    printf("*** Comparação de cartas Atributo: PIB *** \n");
+    if (pib > pib2){
+        printf("Carta 1 venceu: %f \n", pib);
+        }
+        else{
+        printf("Carta 2 venceu: %f \n", pib2);
+        }
+
+    printf("*** Comparação de cartas Atributo: Pontos Turisticos *** \n");
+    if (pturisticos > pturisticos2){
+        printf("Carta 1 venceu: %d \n", pturisticos);
+        }
+        else{
+        printf("Carta 2 venceu: %d \n", pturisticos2);
+        }
+
+    printf("*** Comparação de cartas Atributo: Densidade Populacional *** \n");
+    if (densidade < densidade2){
+        printf("Carta 1 venceu: %f \n", densidade);
+        }
+        else{
+        printf("Carta 2 venceu: %f \n", densidade2);
+        }
+        
+    printf("*** Comparação de cartas Atributo: PIB per Capita *** \n");
+    if (capita > capita2){
+        printf("Carta 1 venceu: %f \n", capita);
+        }
+        else{
+        printf("Carta 2 venceu: %f \n", capita2);
+        }
+
+     printf("*** Comparação de cartas Atributo: Super Poder *** \n");
+     if (superpoder > superpoder2){
+        printf("Carta 1 venceu: %f \n", superpoder);
+        }
+        else{
+        printf("Carta 2 venceu: %f \n", superpoder2);
+        }
+
 
     return 0;
+}
