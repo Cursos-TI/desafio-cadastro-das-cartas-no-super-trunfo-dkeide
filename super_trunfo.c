@@ -224,5 +224,104 @@ int main () {
         break;
         }
 
+         int primeiroatributo, segundoatributo;
+         int resultado1, resultado2;
+
+         // jogo secuntadário onde o player irá escolher 2 atributos diferentes onde serão somados e comparados com o computador
+
+         printf("*** JOGO SECUNDÁRIO COMPARAÇÃO *** \n");
+         printf("Escolha o primeiro atributo! \n");
+         printf("1. Área \n");
+         printf("2. PIB \n");
+         printf("3. Densidade Demográfica \n");
+         printf("4. Capital \n");
+         printf("5. Super Poder \n");
+
+         printf("Escolha a comparação: ");
+         scanf("%d", &primeiroatributo);
+
+         switch (primeiroatributo)
+         {
+         case 1:
+         printf("Você escolheu a opção Area em km²! \n");
+         resultado1 = (km > km2) ? 1 : 0;
+         break;
+         
+         case 2:
+         printf("Você escolheu a opção PIB! \n");
+         resultado1 = (pib > pib2) ? 1 : 0;
+         break;
+          
+         case 3:
+         printf("Você escolheu a opção Densidade Demográfica! \n");
+         resultado1 = (densidade < densidade2) ? 1 : 0;   
+         break;
+
+         case 4:
+         printf("Você escolheu a opção Capital! \n");
+         resultado1 = (capita > capita2) ? 1 : 0;
+         break;
+
+         case 5:
+         printf("Você escolheu a opção Super Porder! \n");
+         resultado1 = (superpoder > superpoder2) ? 1 : 0;
+         break;
+
+         default:
+         printf("Opção inválida! \n");
+         break;
+         }
+
+         printf("Escolha o segundo atributo! \n");
+         printf("ATENÇÃO: Você deve escolher um atributo diferente do primeiro \n");
+         printf("1. Área \n");
+         printf("2. PIB \n");
+         printf("3. Densidade Demográfica \n");
+         printf("4. Capital \n");
+         printf("5. Super Poder \n");
+
+         printf("Escolha a comparação: ");
+         scanf("%d", &segundoatributo);
+
+         switch (segundoatributo)
+         {
+         case 1:
+         printf("Você escolheu a opção Area em km²! \n");
+         resultado2 = (km > km2) ? 1 : 0;
+         break;
+         
+         case 2:
+         printf("Você escolheu a opção PIB! \n");
+         resultado2 = (pib > pib2) ? 1 : 0;
+         break;
+          
+         case 3:
+         printf("Você escolheu a opção Densidade Demográfica! \n");
+         resultado2 = (densidade < densidade2) ? 1 : 0;   
+         break;
+
+         case 4:
+         printf("Você escolheu a opção Capital! \n");
+         resultado2 = (capita > capita2) ? 1 : 0;
+         break;
+
+         case 5:
+         printf("Você escolheu a opção Super Porder! \n");
+         resultado2 = (superpoder > superpoder2) ? 1 : 0;
+         break;
+
+         default:
+         printf("Opção inválida! \n");
+         break;
+         } 
+
+         if (resultado1 && resultado2){
+            printf("Parabéns, você venceu ! \n");
+         } else if (resultado1 != resultado2) {
+            printf("Você empatadou \n");
+         } else {
+            printf("Infelizmente você perdeu! \n");
+         }
+
         return 0;
         }
